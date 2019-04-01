@@ -10,9 +10,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-sleuth'
 Plugin 'flazz/vim-colorschemes'
+
+Plugin 'ajh17/VimCompletesMe'
+Plugin 'ludovicchabant/vim-gutentags'
+
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -29,6 +34,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+
+syntax on
 
 set number
 set colorcolumn=79
