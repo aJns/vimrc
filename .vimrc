@@ -12,12 +12,21 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'flazz/vim-colorschemes'
 
 Plugin 'ajh17/VimCompletesMe'
 Plugin 'ludovicchabant/vim-gutentags'
 
 Plugin 'kien/ctrlp.vim'
+
+" Somewhat clojure/lisp specific stuff
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-fireplace'    " clojure repl connection
+Plugin 'luochen1990/rainbow'    " rainbow pars
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'tpope/vim-salve'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,6 +44,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
+" Plugin conf/setup
+let g:rainbow_active = 1 
+
 
 syntax on
 
@@ -46,5 +58,7 @@ set nowrap
 set shiftwidth=4
 set tabstop=4
 set expandtab
+
+set smartcase
 
 colorscheme Monokai
