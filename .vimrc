@@ -61,7 +61,7 @@ let g:netrw_liststyle=3
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
 set background=dark         " Ensure dark background
-colorscheme janah           " Set colorscheme
+silent! colorscheme janah   " Set colorscheme
 
 " other settings
 set number                  " show line numbers
