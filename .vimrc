@@ -41,7 +41,9 @@ let g:ale_linters ={
 Plugin 'whonore/Coqtail' | Plugin 'let-def/vimbufsync' 
 
 Plugin 'rust-lang/rust.vim'
-Plugin 'autozimu/LanguageClient-neovim'
+
+" Plugin 'autozimu/LanguageClient-neovim'
+" Needs more installation, or an aur package
 
 
 " " All of your Plugins must be added before the following line
