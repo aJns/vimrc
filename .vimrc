@@ -31,6 +31,7 @@ Plugin 'mhinz/vim-startify'             " fancy startscreen
 Plugin 'ajh17/VimCompletesMe'           " Simple autocomplete
 Plugin 'ludovicchabant/vim-gutentags'   " tags
 Plugin 'joom/latex-unicoder.vim'        " Write unicode symbols with latex
+Plugin 'junegunn/fzf.vim'               " Fuzzy search
 
 " Language specific plugins
 Plugin 'neovimhaskell/haskell-vim'
@@ -42,6 +43,7 @@ Plugin 'whonore/Coqtail' | Plugin 'let-def/vimbufsync'
 
 Plugin 'rust-lang/rust.vim'
 Plugin 'autozimu/LanguageClient-neovim'
+Plugin 'fatih/vim-go'
 
 
 " " All of your Plugins must be added before the following line
