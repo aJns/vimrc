@@ -37,8 +37,6 @@ Plugin 'junegunn/fzf.vim'               " Fuzzy search
 " Plugin 'neoclide/coc.nvim', {'branch': 'release'} " language server
 " let g:coc_disable_startup_warning = 1
 
-Plugin 'rhysd/vim-clang-format'         " clang format
-
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,9 +52,8 @@ let g:netrw_liststyle=3     " Start explore-mode (netrw) in a tree view
 " start FZF with ctrl-p
 nmap <C-P> :FZF<CR>
 
-let g:clang_format#command="clang-format-10"
-let g:clang_format#detect_style_file=1
-autocmd FileType c,cpp,objc map <buffer> = <Plug>(operator-clang-format)
+autocmd FileType c,cpp,objc set equalprg=clang-format-10\ -style=file
+autocmd FileType c,cpp,objc set formatprg=clang-format-10\ -style=file
 
 
 " colorscheme
