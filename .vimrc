@@ -34,8 +34,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight' " Syntax highlighting
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'               " Fuzzy search
 
-" Plugin 'neoclide/coc.nvim', {'branch': 'release'} " language server
-" let g:coc_disable_startup_warning = 1
+Plugin 'Chiel92/vim-autoformat'         " autoformat, mainly for on-write formatting
 
 
 " " All of your Plugins must be added before the following line
@@ -52,6 +51,10 @@ let g:netrw_liststyle=3     " Start explore-mode (netrw) in a tree view
 " start FZF with ctrl-p
 nmap <C-P> :FZF<CR>
 
+" Format on write
+au BufWrite * :Autoformat
+
+" Set clang-format as = and gq
 autocmd FileType c,cpp,objc set equalprg=clang-format-10\ -style=file
 autocmd FileType c,cpp,objc set formatprg=clang-format-10\ -style=file
 
