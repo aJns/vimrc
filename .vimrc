@@ -37,6 +37,7 @@ Plugin 'junegunn/fzf.vim'               " Fuzzy search
 Plugin 'Chiel92/vim-autoformat'         " autoformat, mainly for on-write formatting
 
 Plugin 'haya14busa/vim-asterisk'        " better star-search
+Plugin 'yegappan/mru'                   " MRU
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
