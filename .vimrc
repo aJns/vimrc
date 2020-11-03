@@ -54,7 +54,7 @@ let g:netrw_liststyle=3     " Start explore-mode (netrw) in a tree view
 nmap <C-P> :FZF<CR>
 
 " Format on write
-au BufWrite * :Autoformat
+au BufWrite *.c,*.cpp,*.h :Autoformat
 
 " Set clang-format as = and gq
 autocmd FileType c,cpp,objc set equalprg=clang-format-10\ -style=file
